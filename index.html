@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEVEU</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+<link rel="stylesheet" href="css/flipclock.css">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="bg-single-image">
+	<div class="bg-overlay"></div>
+	<div id="preloader"><div id="status"><i class="fa fa-spinner fa-spin"></i></div></div>
+	<section class="container">
+		<header><h1><a href="index.html" title="TEVEU"></a></h1></header>
+		<section class="contentWrapper text-center">
+			<p>We will present you the perfect product. See you in 2017.</p>
+		</section>
+		<div id="countdown-wrapper">
+			<div id="countdown-clock"></div>
+		</div>
+		<div class="row">
+			<section class="subscribe-wrapper col-md-4 col-md-offset-4">
+				<form method="POST" action="#" role="form" class="subscribe-form">
+					<div>
+						<div class="input-group">
+							<input type="email" name="email" id="subscribe-email" class="form-control" placeholder="Enter your email here to stay tuned" required="">
+							<span class="input-group-btn"><button id="subscribe-submit" type="submit" class="btn btn-default fa fa-angle-right"></button></span>
+						</div>
+						<div class="subscribe-error-field"></div>
+						<div class="subscribe-message"></div>
+					</div>
+				</form>
+			</section>
+		</div>
+		<footer>
+			<p style="display:none;">&copy; 2010-2015. Beijing Teveu Technology Co., Ltd. All Rights Reserved.</p>
+		</footer>
+	</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(window).load(function() {
+			$('#status').fadeOut();
+			$('#preloader').delay(350).fadeOut('slow');
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+		//]]>
+	</script>
+	<script type="text/javascript" src="js/flipclock.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script> 
+	<script>
+		$.backstretch(["img/slide-1.jpg","img/slide-2.jpg","img/slide-3.jpg"],{duration:4000,fade:750});
+	</script>
+	​<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
